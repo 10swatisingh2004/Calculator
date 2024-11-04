@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+}
+body{
+    background-color: #e8f0f2;
+    max-height: 100vh;
+}
+
+#main{
+    text-align: center;
+
+
+}
+#calcu{
+    background-color: #edf2f4;
+    border: 2px solid #ffff;
+    padding: 10px;
+ 
+    max-width: 90%;
+    min-height: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: 10px 10px 20px rgba(61, 61, 61, 0.74), -10px -10px 8px white;
+    border-radius: 15px;
+    transform: translateY(-10px);
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    padding: 20px 30px;
+    color: #2b2d42;
+    font-size: xx-large;
+    font-weight: 900;
+    border: 0.10px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719), -10px -10px 8px rgba(255, 255, 255, 0.863);
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+input[type="button"]:active , input[type="button"]:hover{
+    transform: translateY(4px);
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 30px 20px ;
+    font-size: 54px;
+    font-weight: bold;
+    background-color: #d1d9e0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #2b2d42;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width:999px) {
+    #main{
+        margin: 30px;
+    }
+    #calcu {
+    
+        max-width: 100%;
+        min-height: 50%;
+        
+        margin: auto;
+       
+    }
+    input[type="text"] {
+        width: 80%;
+        padding: 20px 10px;
+        font-size: 34px;
+        
+    }
+    input[type="button"] {
+        margin-top: 20px;
+        padding: 10px 20px;
+       
+        color: black;
+        font-size: xx-large;
+        font-weight: 900;
+        border: 0.10px solid #fff;
+        border-radius: 50%;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.719), -10px -10px 8px rgba(255, 255, 255, 0.863);
+        cursor: pointer;
+        transition: transform 0.1s ease-in-out;
+    }
+}
